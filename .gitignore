@@ -1,0 +1,23 @@
+# Environment variables & secrets (NEVER commit)
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+app/node_modules/
+
+# Build artifacts
+dist/
+app/dist/
+*.tsbuildinfo
+
+# Local data & logs
+app/data/*.json
+!app/data/.gitkeep
+*.log
+npm-debug.log*
+
+# System files
+.DS_Store
+Thumbs.db

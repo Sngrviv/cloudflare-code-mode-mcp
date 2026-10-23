@@ -1,0 +1,27 @@
+{
+  "name": "tech-news-agent",
+  "version": "1.0.0",
+  "description": "TechNewsAgent — Code Mode MCP demo (Normal vs Code Mode tool calling)",
+  "type": "module",
+  "scripts": {
+    "dev:server": "tsx src/mcp/server.ts",
+    "demo:direct": "tsx src/demo/directMode.ts",
+    "demo:code-mode": "tsx src/demo/codeMode.ts",
+    "demo:compare": "tsx src/demo/compare.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "axios": "^1.20.0",
+    "dotenv": "^18.0.9",
+    "openai": "^7.43.0",
+    "rss-parser": "^3.13.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
